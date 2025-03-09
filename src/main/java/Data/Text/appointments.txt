@@ -1,0 +1,8 @@
+1;1;2025;January;20;15;50;sufera;none
+2;2;2024;June;28;16;40;Ill;none
+435;3;2024;March;15;11;0;Utilizator Linux;none
+3;4;2024;June;16;17;35;Brainrot;none
+4;6;2024;March;15;14;0;Utilizator Windows;none
+5;4;2025;May;17;13;20;Cancer;none
+213;8884;2024;June;28;13;25;N-ar nimic;none
+712;4;2020;March;15;11;0;Sufera in general;none

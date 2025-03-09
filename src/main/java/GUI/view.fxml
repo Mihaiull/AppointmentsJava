@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="820.0" prefWidth="1059.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <ListView fx:id="personListView" layoutX="48.0" layoutY="32.0" prefHeight="269.0" prefWidth="323.0" />
+      <ListView fx:id="appoimnetsListView" layoutX="48.0" layoutY="374.0" prefHeight="269.0" prefWidth="323.0" />
+      <GridPane layoutX="430.0" layoutY="46.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Id" />
+            <Label text="Name" GridPane.rowIndex="1" />
+            <Label text="Surname" GridPane.rowIndex="2" />
+            <Label text="Age" GridPane.rowIndex="3" />
+            <TextField id="surnameTextField" fx:id="surnameTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField id="nameTextField" fx:id="nameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField id="idPersonTextField" fx:id="idTextField" promptText="nah" GridPane.columnIndex="1" />
+            <TextField id="ageTextField" fx:id="ageTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+         </children>
+      </GridPane>
+      <GridPane layoutX="430.0" layoutY="374.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="Id" />
+            <Label text="Id person" GridPane.rowIndex="1" />
+            <Label text="Year" GridPane.rowIndex="2" />
+            <Label text="Month" GridPane.rowIndex="3" />
+            <Label text="Day" GridPane.rowIndex="4" />
+            <Label text="Hour" GridPane.rowIndex="5" />
+            <Label text="Minutes" GridPane.rowIndex="6" />
+            <Label text="Condition" GridPane.rowIndex="7" />
+            <Label text="Notes" GridPane.rowIndex="8" />
+            <TextField fx:id="idappoimentTextField" GridPane.columnIndex="1" />
+            <TextField fx:id="idPersonTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField fx:id="yearTextField" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField fx:id="monthTextField" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField fx:id="dayTextField" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <TextField fx:id="hourTextField" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+            <TextField fx:id="minTextField" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+            <TextField fx:id="connditionTextField" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+            <TextField fx:id="notesTextField" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+         </children>
+      </GridPane>
+      <Button fx:id="addPersonButton" layoutX="475.0" layoutY="205.0" mnemonicParsing="false" onAction="#addPersonButtonClicked" prefHeight="26.0" prefWidth="68.0" text="Add" />
+      <Button fx:id="AddAppoimentsButton" layoutX="475.0" layoutY="677.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Add" />
+      <Button fx:id="removeAppointmentButton" layoutX="559.0" layoutY="205.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Remove" />
+      <Button fx:id="updateAppointmentButton" layoutX="475.0" layoutY="249.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Update" />
+      <Button fx:id="findAppointmentButton" layoutX="559.0" layoutY="249.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Find" />
+      <Button fx:id="removePersonButton" layoutX="562.0" layoutY="677.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Remove" />
+      <Button fx:id="updatePersonButton" layoutX="474.0" layoutY="732.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Update" />
+      <Button fx:id="findPersonButton" layoutX="563.0" layoutY="732.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="68.0" text="Find" />
+   </children>
+</AnchorPane>
